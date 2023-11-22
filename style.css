@@ -1,12 +1,10 @@
-/* Reset some default styles */
-body, h1, p {
-    margin: 0;
-    padding: 0;
-}
+/* Your CSS styles go here */
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB; /* Light blue for the ocean */
 }
 
 .game-container {
@@ -17,27 +15,24 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1, p {
     color: #333;
     text-align: center;
 }
 
-p {
-    color: #555;
-    text-align: center;
+#game-screen {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Set the height of the game screen */
+    background-color: #87CEEB; /* Light blue for the ocean */
 }
 
-/* Add some additional styling for visual appeal */
-.game-container {
-    border-radius: 8px;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
+#ship {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #FF4500; /* Orange for the ship */
 }
