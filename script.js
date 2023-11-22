@@ -38,8 +38,8 @@ function displayQuiz() {
         q.options.forEach((option, optionIndex) => {
             quizHTML += `
                 <div>
-                    <input type="radio" name="question${index}" id="option${optionIndex}">
-                    <label for="option${optionIndex}">${option}</label>
+                    <input type="radio" name="question${index}" id="option${index}${optionIndex}" value="${option}">
+                    <label for="option${index}${optionIndex}">${option}</label>
                 </div>
             `;
         });
